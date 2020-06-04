@@ -19,7 +19,8 @@
 <script>
 import { FormField, HandlesValidationErrors } from 'laravel-nova'
 import CKEditor from '@ckeditor/ckeditor5-vue'
-import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
+import '../ckeditor5/ckeditor_build'
+// import ClassicEditor from '@ckeditor/ckeditor5-build-classic'
 import '@ckeditor/ckeditor5-build-classic/build/translations/ru';
 import NovaCKEditor5UploadAdapter from '../ckeditor5/upload-adapter'
 
