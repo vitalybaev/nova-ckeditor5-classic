@@ -1,3 +1,136 @@
+$link-brand-color: #06615B;
+$color-brand: #439A95;
+$color-brand-opacity--35: rgba(67, 154, 149, 0.35);
+$color-gray--100: #d4d4d4;
+$color-gray--500: #888;
+$color-gray--800:  #616161;
+$color-text: #333333;
+
 .auto-height {
     height: auto !important;
+}
+
+.ck-content {
+    line-height: 1.5;
+
+    * {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    }
+
+    h1, h2, .h1, .h2 {
+        font-weight: 800;
+    }
+
+    h3, h4, .h3, .h4 {
+        font-weight: 700;
+    }
+
+    h5, h6, .h5, .h6 {
+        font-weight: 500;
+    }
+
+    h1, .h1 {
+        font-size: 24px;
+    }
+
+    h2, .h2 {
+        font-size: 22px;
+    }
+
+    h3, .h3 {
+        font-size: 20px;
+    }
+
+    h4, .h4 {
+        font-size: 18px;
+    }
+
+    h5, .h5 {
+        font-size: 17px;
+    }
+
+    h2, h3, h4, h5, h6 {
+        margin-top: 24px;
+    }
+
+    p {
+        margin-top: 16px;
+        text-align: justify;
+    }
+
+    ul {
+        margin-left: 32px;
+        list-style: none;
+
+        li {
+            &::before {
+                content: "\2022";
+                color: $color-brand;
+                font-weight: bold;
+                display: inline-block;
+                width: 20px;
+                margin-left: -1em;
+                font-size: 20px;
+                line-height: 16px;
+            }
+        }
+    }
+
+    ul, ol {
+        margin-top: 16px;
+    }
+
+    li {
+        line-height: 1.5;
+        margin-bottom: 8px;
+    }
+
+    img {
+        width: auto;
+        height: auto;
+        max-width: 80%;
+        margin: 24px auto;
+    }
+
+    figure {
+        margin: 24px 0;
+        padding: 24px 0 16px;
+        text-align: center;
+
+        img {
+            margin: 0;
+        }
+    }
+
+    figcaption {
+        font-size: 14px;
+        color: $color-gray--800;
+    }
+
+    div {
+        margin-bottom: 16px;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+
+        th, td {
+            padding: 16px;
+            border-bottom: 1px $color-gray--100 solid;
+        }
+
+        td, th {
+            text-align: left;
+        }
+
+        tr {
+            th {
+                background: #F3F8F8;
+                font-weight: 800;
+                border-top: 1px $color-gray--100 solid;
+            }
+        }
+    }
 }

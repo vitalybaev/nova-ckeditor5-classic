@@ -37,20 +37,15 @@ export default {
         return {
             editor: ClassicEditor,
             defaultEditorConfig: {
+                ...this.field.options,
                 nova: {
                     resourceName: this.resourceName,
                     field: this.field,
                     draftId: uuidv4()
                 },
-                language: this.field.options.language || 'en',
-                toolbar: this.field.options.toolbar,
-                heading: this.field.options.heading,
-                image: this.field.options.image,
-                fontFamily: this.field.options.fontFamily,
                 extraPlugins: [
                     this.createUploadAdapterPlugin
                 ],
-                link: this.field.options.link
             }
         }
     },
