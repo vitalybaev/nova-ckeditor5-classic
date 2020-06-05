@@ -33,7 +33,19 @@ export default {
 
     props: ['resourceName', 'resourceId', 'field'],
 
+
     data () {
+        console.log('ckeditor options', {
+            ...this.field.options,
+            nova: {
+                resourceName: this.resourceName,
+                field: this.field,
+                draftId: uuidv4()
+            },
+            extraPlugins: [
+                this.createUploadAdapterPlugin
+            ],
+        });
         return {
             editor: ClassicEditor,
             defaultEditorConfig: {
